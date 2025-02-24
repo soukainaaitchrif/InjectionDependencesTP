@@ -4,8 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="dao" class="org.example.Dao.DaoImp"/>
+    <bean id="d" class="org.example.Dao.DaoImp"/>
     <bean id="metier" class="org.example.metier.MetierImp">
-        <property name="dao" ref="dao"/>
+        <property name="dao" ref="d"/>
     </bean>
 </beans>
