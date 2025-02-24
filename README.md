@@ -19,7 +19,7 @@
 
 
 
-##  Ce projet explore différentes approches d’injection de dépendances en Java à travers quatre classes de présentation :  <br> 
+##  Ce projet explore différentes approches d’injection de dépendances en Java :  <br> 
 
 PresentationV1 : Par instanciation statique  <br> 
 PresentationV2 : Par instanciation dynamique  <br> 
