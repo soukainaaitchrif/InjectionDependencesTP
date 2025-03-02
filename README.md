@@ -22,10 +22,10 @@
 
 ##  Ce projet explore différentes approches d’injection de dépendances en Java :  <br> 
 
-###**1. Injection des Dépendances par Instanciation Statique** <br>
-L’injection des dépendances par instanciation statique lie fortement les classes en créant directement les objets dans le code, ce qui limite la flexibilité et complique les tests.
+### 1. Injection des Dépendances par Instanciation Statique <br>
+L’injection des dépendances par instanciation statique lie fortement les classes en créant directement les objets dans le code, ce qui limite la flexibilité et complique les tests. <br>
 **Avantages**
-L'instanciation statique est facile à implémenter et ne nécessite aucun framework externe. Elle permet une compréhension rapide du code et convient aux petites applications où la modularité n'est pas une priorité.
+L'instanciation statique est facile à implémenter et ne nécessite aucun framework externe. Elle permet une compréhension rapide du code et convient aux petites applications où la modularité n'est pas une priorité. <br>
 **Inconvénients**
 Elle crée une forte dépendance entre les classes, limitant la flexibilité et rendant le code plus difficile à maintenir et à tester. Les modifications nécessitent des changements directs dans le code source, ce qui peut compliquer l’évolution du projet.
 **Exemple:**
@@ -41,9 +41,5 @@ public class PresentationV1 {
         IMetier metierr=new MetierImp(dao);//Injection via le constructeur
         System.out.println(" 'Injection via le constructeur : '    Resultat : "+metier.calcul());
     }}
-
-
-
-
 
  
