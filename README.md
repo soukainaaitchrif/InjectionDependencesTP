@@ -123,7 +123,7 @@ public class MetierImp implements IMetier{
     }}
 ```
 
-##Conclusion <br>
+## Conclusion <br>
 L'injection de dépendances favorise la flexibilité et la maintenabilité des applications. En évoluant de l'instanciation statique vers une approche dynamique, puis vers l'utilisation de Spring, l'architecture devient plus modulaire et facilement extensible.
 
 
