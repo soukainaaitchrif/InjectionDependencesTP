@@ -17,7 +17,8 @@
  ┃ 📜 config.txt         // Fichier de configuration pour l'injection dynamique    <br> 
 
 
-
+## Introduction  <br>
+L'injection de dépendances est un principe fondamental en programmation qui permet de découpler les composants d'une application, améliorant ainsi sa modularité, sa maintenabilité et sa testabilité. Plutôt que de laisser une classe créer directement ses dépendances, ces dernières lui sont fournies de l'extérieur, réduisant ainsi le couplage et facilitant l'évolution du code. Cette approche peut être mise en œuvre de différentes manières : par instanciation statique, dynamique ou via un framework comme Spring, qui automatise la gestion des dépendances.
 
 
 ##  Ce projet explore différentes approches d’injection de dépendances en Java :  <br> 
@@ -27,7 +28,7 @@ L’injection des dépendances par instanciation statique lie fortement les clas
 **Avantages** <br>
 L'instanciation statique est facile à implémenter et ne nécessite aucun framework externe. Elle permet une compréhension rapide du code et convient aux petites applications où la modularité n'est pas une priorité. <br>
 **Inconvénients** <br>
-Elle crée une forte dépendance entre les classes, limitant la flexibilité et rendant le code plus difficile à maintenir et à tester. Les modifications nécessitent des changements directs dans le code source, ce qui peut compliquer l’évolution du projet.
+Elle crée une forte dépendance entre les classes, limitant la flexibilité et rendant le code plus difficile à maintenir et à tester. Les modifications nécessitent des changements directs dans le code source, ce qui peut compliquer l’évolution du projet.<br>
 **Exemple:**
 ```java
 public class PresentationV1 {
@@ -121,5 +122,8 @@ public class MetierImp implements IMetier{
         this.dao = dao;
     }}
 ```
+
+##Conclusion <br>
+L'injection de dépendances favorise la flexibilité et la maintenabilité des applications. En évoluant de l'instanciation statique vers une approche dynamique, puis vers l'utilisation de Spring, l'architecture devient plus modulaire et facilement extensible.
 
 
